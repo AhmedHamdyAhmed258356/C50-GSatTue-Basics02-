@@ -63,10 +63,16 @@ namespace C50_GSatTue_Basics02
             //Console.WriteLine(dPages);
             #endregion
             #region Q6
-            // Q06. Declare a double price = 49.99; then convert it into an int using a cast.
-            double price = 49.99;
-            int intprice=(int)price;
-            Console.WriteLine(intprice);
+            //// Q06. Declare a double price = 49.99; then convert it into an int using a cast.
+            //double price = 49.99;
+            //int intprice=(int)price;
+            //Console.WriteLine(intprice);
+            #endregion
+            #region Q7
+            //Given string pagesText = "464";, convert it into an int using the Convert class.
+            string pagestext = "464";
+            int pages=Convert.ToInt32(pagestext);
+            Console.WriteLine(pages);
             #endregion
         }
     }
