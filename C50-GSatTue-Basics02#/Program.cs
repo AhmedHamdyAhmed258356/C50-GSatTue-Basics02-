@@ -20,14 +20,21 @@
             #endregion
             #region Q2
             //Using the Book class above, print the result of calling ToString(), Equals() (compare book with
-           // itself), GetHashCode(), and GetType() on book.
-           Book b2 = new Book();
-            b2.Title = "Learn C#";
-            b2.Pages = 300;
-            Console.WriteLine(b2.ToString());
-            Console.WriteLine(b2.Equals(b2));
-            Console.WriteLine(b2.GetHashCode());
-            Console.WriteLine(b2.GetType());
+            // itself), GetHashCode(), and GetType() on book.
+            //Book b2 = new Book();
+            //b2.Title = "Learn C#";
+            //b2.Pages = 300;
+            //Console.WriteLine(b2.ToString());
+            //Console.WriteLine(b2.Equals(b2));
+            //Console.WriteLine(b2.GetHashCode());
+            //Console.WriteLine(b2.GetType());
+            #endregion
+            #region Q3
+            // Look at the line below. Is it a compile-time error, a runtime error, or a logical error? Fix it.
+            //int pages = "464";
+            //Answer:it's a compile-time error can't implicitly convert type 'srting'to 'int'.
+            int Pages = 300;// this is the right solution ENG/ mohamed ramzy ❤️.7
+            Console.WriteLine(Pages);
             #endregion
         }
     }
