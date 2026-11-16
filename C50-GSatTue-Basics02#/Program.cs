@@ -92,10 +92,17 @@ namespace C50_GSatTue_Basics02
             #endregion
             #region Q9
             // Q09. Given int pages = 464;, convert it into a string using ToString() and print its type using GetType() to prove it's now a string.
-            int pages = 464;
-            string pagestext=pages.ToString();
-            Console.WriteLine(pagestext);
-            Console.WriteLine(pagestext.GetType());// system.string 
+            //int pages = 464;
+            //string pagestext=pages.ToString();
+            //Console.WriteLine(pagestext);
+            //Console.WriteLine(pagestext.GetType());// system.string 
+            #endregion
+            #region Q10
+            int copies = 100;
+            object objcopies = copies; //Boxing
+            int copies2=(int)objcopies; //Unboxing
+            Console.WriteLine(objcopies);
+            Console.WriteLine(copies2);
             #endregion
         }
     }
