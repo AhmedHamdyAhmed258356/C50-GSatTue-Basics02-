@@ -39,7 +39,7 @@ namespace C50_GSatTue_Basics02
             // Console.WriteLine(Pages);
             #endregion
             #region Q4
-            ////// Q04. Write code that divides 10 by 0 inside a try block, catches the exception, prints "Cannot divide by zero", and then prints "Done" in a finally block.
+            // Q04. Write code that divides 10 by 0 inside a try block, catches the exception, prints "Cannot divide by zero", and then prints "Done" in a finally block.
             //try
             //{
             //    int a = 10;
@@ -57,22 +57,38 @@ namespace C50_GSatTue_Basics02
             //}
             #endregion
             #region Q5
-            //// Q05. Declare an int pages = 300; then store it in a double variable without using a cast.
+            // Q05. Declare an int pages = 300; then store it in a double variable without using a cast.
             //int Pages = 300;
             //double dPages = Pages;
             //Console.WriteLine(dPages);
             #endregion
             #region Q6
-            //// Q06. Declare a double price = 49.99; then convert it into an int using a cast.
+            // Q06. Declare a double price = 49.99; then convert it into an int using a cast.
             //double price = 49.99;
             //int intprice=(int)price;
             //Console.WriteLine(intprice);
             #endregion
             #region Q7
             //Given string pagesText = "464";, convert it into an int using the Convert class.
-            string pagestext = "464";
-            int pages=Convert.ToInt32(pagestext);
-            Console.WriteLine(pages);
+            //string pagestext = "464";
+            ////int pages=Convert.ToInt32(pagestext);
+            ////Console.WriteLine(pages);
+            #endregion
+            #region Q8
+            // Q08. Given string yearText = "2023";, convert it using int.Parse(). Then given string badText = "abc";, use int.TryParse() to safely try converting it, and print "Invalid number" if it fails.
+            string yeartext = "2023";
+            int year = int.Parse(yeartext);
+            Console.WriteLine(year);
+            string badtext = "abc";
+            bool num=int.TryParse(badtext, out int badnumber); 
+            if(num)
+            {
+                Console.WriteLine(badnumber);
+            }
+            else
+            {
+                Console.WriteLine("Invalid number");
+            }
             #endregion
         }
     }
