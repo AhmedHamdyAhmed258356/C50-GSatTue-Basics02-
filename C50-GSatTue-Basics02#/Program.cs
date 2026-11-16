@@ -74,22 +74,6 @@ namespace C50_GSatTue_Basics02
             ////int pages=Convert.ToInt32(pagestext);
             ////Console.WriteLine(pages);
             #endregion
-            #region Q8
-            // Q08. Given string yearText = "2023";, convert it using int.Parse(). Then given string badText = "abc";, use int.TryParse() to safely try converting it, and print "Invalid number" if it fails.
-            //string yeartext = "2023";
-            ////int year = int.Parse(yeartext);
-            ////Console.WriteLine(year);
-            ////string badtext = "abc";
-            ////bool num=int.TryParse(badtext, out int badnumber); 
-            ////if(num)
-            ////{
-            ////    Console.WriteLine(badnumber);
-            ////}
-            ////else
-            ////{
-            ////    Console.WriteLine("Invalid number");
-            ////}
-            #endregion
             #region Q9
             // Q09. Given int pages = 464;, convert it into a string using ToString() and print its type using GetType() to prove it's now a string.
             //int pages = 464;
@@ -116,6 +100,12 @@ namespace C50_GSatTue_Basics02
             // Q12. Declare a string? reviewer = null;. Print whether it is null.
             string? reviewer = null;
             Console.WriteLine(reviewer == null);
+            #endregion
+            #region Q13
+            // Q13. Declare a Book? book = null;. Use ?. to safely read book.Title without crashing the program, and print the result.
+            Book? book = null;
+            string? title = book?.Title;
+            Console.WriteLine(title);
             #endregion
         }
     }
