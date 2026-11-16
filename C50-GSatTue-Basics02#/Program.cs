@@ -116,9 +116,9 @@ namespace C50_GSatTue_Basics02
             ////Console.WriteLine(title);
             #endregion
             #region Q15
-            //string? name = "Ahmed";
-            ////string confirmedName = name!;
-            ////Console.WriteLine(confirmedName);
+            string? name = "Ahmed";
+            string confirmedName = name!;
+            Console.WriteLine(confirmedName);
             #endregion
         }
     }
