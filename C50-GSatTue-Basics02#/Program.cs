@@ -1,4 +1,6 @@
-﻿namespace C50_GSatTue_Basics02
+﻿using System.Linq.Expressions;
+
+namespace C50_GSatTue_Basics02
 {
     class Book
     {
@@ -33,8 +35,26 @@
             // Look at the line below. Is it a compile-time error, a runtime error, or a logical error? Fix it.
             //int pages = "464";
             //Answer:it's a compile-time error can't implicitly convert type 'srting'to 'int'.
-            int Pages = 300;// this is the right solution ENG/ mohamed ramzy ❤️.7
-            Console.WriteLine(Pages);
+            // int Pages = 300;// this is the right solution ENG/ mohamed ramzy ❤️
+            // Console.WriteLine(Pages);
+            //#endregion
+            //#region Q04
+            //// Q04. Write code that divides 10 by 0 inside a try block, catches the exception, prints "Cannot divide by zero", and then prints "Done" in a finally block.
+            try
+            {
+                int a = 10;
+                int b = 0;
+                int result = a / b;
+                Console.WriteLine(result);
+            }
+            catch (DivideByZeroException)
+            {
+                Console.WriteLine("can't divide by zero");
+            }
+            finally
+            {
+                Console.WriteLine("DONE");
+            }
             #endregion
         }
     }
