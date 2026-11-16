@@ -98,7 +98,7 @@ namespace C50_GSatTue_Basics02
             #endregion
             #region Q12
             // Q12. Declare a string? reviewer = null;. Print whether it is null.
-           // string? reviewer = null;
+            // string? reviewer = null;
             //Console.WriteLine(reviewer == null);
             #endregion
             #region Q13
@@ -110,10 +110,15 @@ namespace C50_GSatTue_Basics02
             #region Q14
             //Using title from the previous question, use ?? to print "Untitled" if title is null.
             //Then use ??= to assign title the value "Untitled" only if it's still null
-            string? title = null;
-            Console.WriteLine(title??"Untitled");
-            title ??= "Untitiled";
-            Console.WriteLine(title);
+            //string? title = null;
+            ////Console.WriteLine(title??"Untitled");
+            ////title ??= "Untitiled";
+            ////Console.WriteLine(title);
+            #endregion
+            #region Q15
+            //string? name = "Ahmed";
+            ////string confirmedName = name!;
+            ////Console.WriteLine(confirmedName);
             #endregion
         }
     }
